@@ -54,6 +54,6 @@ SELECT
 FROM 
     SCP010
 WHERE 
-    D_E_L_E_T_ <> '*' 
-    AND CP_STATUS <> 'E' 
+    D_E_L_E_T_ <> '*'
+    AND CP_STATUS <> 'E'
     AND CP_PREREQU = 'S';
