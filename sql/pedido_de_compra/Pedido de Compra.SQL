@@ -28,10 +28,10 @@ FROM
     SC7010
 WHERE 
     D_E_L_E_T_ <> '*'
-    AND C7_QUJE = '0'
-    AND C7_QTDACLA = '0'
+    AND C7_QUJE = 0
+    AND C7_QTDACLA = 0
     AND C7_CONAPRO <> 'B'
-    AND C7_TIPO = '1'
+    AND C7_TIPO = 1
     AND C7_RESIDUO = ' '
 UNION ALL
 SELECT 
@@ -52,7 +52,7 @@ WHERE
     D_E_L_E_T_ <> '*'
     AND C7_CONAPRO = 'B'
     AND C7_QUJE < C7_QUANT
-    AND C7_RESIDUO = ' ' 
+    AND C7_RESIDUO = ' '
 UNION ALL
 SELECT 
     'Pedido de Compra - Em Recebimento (Pré-Nota)' AS Filtro, 

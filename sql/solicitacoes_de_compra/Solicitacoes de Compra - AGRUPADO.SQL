@@ -15,7 +15,7 @@ https://github.com/faverorodrigues/
 
 SELECT 
     'Solicitações de Compra - Total' AS Filtro, 
-    COUNT(DISTINCT C1_FILIAL+C1_NUM) AS Total
+    COUNT(DISTINCT CONCAT(C1_FILIAL,C1_NUM)) AS Total
 FROM 
     SC1010
 WHERE 
@@ -23,7 +23,7 @@ WHERE
 UNION ALL
 SELECT 
     'Solicitações de Compra - Pendente' AS Filtro, 
-    COUNT(DISTINCT C1_FILIAL+C1_NUM) AS Total
+    COUNT(DISTINCT CONCAT(C1_FILIAL,C1_NUM)) AS Total
 FROM 
     SC1010
 WHERE 
@@ -35,7 +35,7 @@ WHERE
 UNION ALL
 SELECT 
     'Solicitações de Compra - Totalmente Atendida' AS Filtro, 
-    COUNT(DISTINCT C1_FILIAL+C1_NUM) AS Total
+    COUNT(DISTINCT CONCAT(C1_FILIAL,C1_NUM)) AS Total
 FROM 
     SC1010
 WHERE 
@@ -44,7 +44,7 @@ WHERE
 UNION ALL
 SELECT 
     'Solicitações de Compra - Parcialmente Atendida' AS Filtro, 
-    COUNT(DISTINCT C1_FILIAL+C1_NUM) AS Total
+    COUNT(DISTINCT CONCAT(C1_FILIAL,C1_NUM)) AS Total
 FROM 
     SC1010
 WHERE 
@@ -55,7 +55,7 @@ WHERE
 UNION ALL
 SELECT 
     'Solicitações de Compra - Em Processo de Cotação' AS Filtro, 
-    COUNT(DISTINCT C1_FILIAL+C1_NUM) AS Total
+    COUNT(DISTINCT CONCAT(C1_FILIAL,C1_NUM)) AS Total
 FROM 
     SC1010
 WHERE 
@@ -66,7 +66,7 @@ WHERE
 UNION ALL
 SELECT 
     'Solicitações de Compra - Bloqueada' AS Filtro, 
-    COUNT(DISTINCT C1_FILIAL+C1_NUM) AS Total
+    COUNT(DISTINCT CONCAT(C1_FILIAL,C1_NUM)) AS Total
 FROM 
     SC1010
 WHERE 
